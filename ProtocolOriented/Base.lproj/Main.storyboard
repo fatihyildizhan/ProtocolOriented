@@ -24,14 +24,14 @@
                                 <rect key="frame" x="164" y="207" width="46" height="30"/>
                                 <state key="normal" title="Page 1"/>
                                 <connections>
-                                    <segue destination="Ax2-1c-Ffd" kind="show" id="45E-Ad-YQ3"/>
+                                    <segue destination="Ax2-1c-Ffd" kind="show" identifier="page1segue" id="45E-Ad-YQ3"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ots-GI-0kw">
                                 <rect key="frame" x="163" y="268" width="48" height="30"/>
                                 <state key="normal" title="Page 2"/>
                                 <connections>
-                                    <segue destination="27W-6Z-mnw" kind="show" id="2pv-eB-gfJ"/>
+                                    <segue destination="27W-6Z-mnw" kind="show" identifier="page2segue" id="2pv-eB-gfJ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -61,13 +61,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Vzs-fM-Qev">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Vzs-fM-Qev" customClass="FlowersTableView" customModule="ProtocolOriented" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="27W-6Z-mnw" id="PaD-XU-NeX"/>
-                                    <outlet property="delegate" destination="27W-6Z-mnw" id="Zkl-Zw-e2L"/>
-                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -79,12 +75,12 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="flowersTableView" destination="Vzs-fM-Qev" id="Txh-2x-BRc"/>
+                        <outlet property="flowersTableView" destination="Vzs-fM-Qev" id="6UW-Yd-d6z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4rM-bJ-dfr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1836" y="1110"/>
+            <point key="canvasLocation" x="1982" y="1105"/>
         </scene>
         <!--Page1 View Controller-->
         <scene sceneID="BDZ-qC-BIM">
@@ -97,12 +93,39 @@
                     <view key="view" contentMode="scaleToFill" id="ju2-ec-tDJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TNG-dg-2m1">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TE8-lh-OKe">
+                                        <rect key="frame" x="166" y="323" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="TE8-lh-OKe" firstAttribute="centerX" secondItem="TNG-dg-2m1" secondAttribute="centerX" id="rLa-TS-Prf"/>
+                                    <constraint firstItem="TE8-lh-OKe" firstAttribute="centerY" secondItem="TNG-dg-2m1" secondAttribute="centerY" id="uqV-Sh-Iv2"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="TNG-dg-2m1" secondAttribute="trailing" id="6Qw-Fa-ooq"/>
+                            <constraint firstItem="TNG-dg-2m1" firstAttribute="top" secondItem="ju2-ec-tDJ" secondAttribute="top" id="aHk-bb-ryh"/>
+                            <constraint firstItem="TNG-dg-2m1" firstAttribute="leading" secondItem="ju2-ec-tDJ" secondAttribute="leading" id="gZu-ql-Awp"/>
+                            <constraint firstAttribute="bottom" secondItem="TNG-dg-2m1" secondAttribute="bottom" id="hB3-9J-3Ts"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="flowerDetailLabel" destination="TE8-lh-OKe" id="TbL-C2-aIz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HQm-Od-ug7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1836" y="454"/>
+            <point key="canvasLocation" x="1982" y="449"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="m1h-5e-umf">
