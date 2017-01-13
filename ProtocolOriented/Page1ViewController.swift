@@ -13,7 +13,7 @@ class Page1ViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    
+    self.title = "Page 1"
   }
   
 }

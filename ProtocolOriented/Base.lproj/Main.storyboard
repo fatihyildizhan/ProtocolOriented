@@ -60,8 +60,27 @@
                     <view key="view" contentMode="scaleToFill" id="2Xf-GP-r9b">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Vzs-fM-Qev">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="27W-6Z-mnw" id="PaD-XU-NeX"/>
+                                    <outlet property="delegate" destination="27W-6Z-mnw" id="Zkl-Zw-e2L"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Vzs-fM-Qev" firstAttribute="top" secondItem="YEb-q6-aaM" secondAttribute="bottom" id="Cyt-Li-vav"/>
+                            <constraint firstItem="Vzs-fM-Qev" firstAttribute="leading" secondItem="2Xf-GP-r9b" secondAttribute="leading" id="SxV-LU-TUM"/>
+                            <constraint firstItem="LfK-1i-cE6" firstAttribute="top" secondItem="Vzs-fM-Qev" secondAttribute="bottom" id="agt-Bq-fT1"/>
+                            <constraint firstAttribute="trailing" secondItem="Vzs-fM-Qev" secondAttribute="trailing" id="w1w-Nn-HGF"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="flowersTableView" destination="Vzs-fM-Qev" id="Txh-2x-BRc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4rM-bJ-dfr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
