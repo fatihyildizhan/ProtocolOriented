@@ -10,7 +10,7 @@
 		0F4C6FFA1E294D07005363C5 /* FlowersTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4C6FF81E294D07005363C5 /* FlowersTableView.swift */; };
 		0F4C6FFB1E294D07005363C5 /* Page2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4C6FF91E294D07005363C5 /* Page2ViewController.swift */; };
 		0F4C6FFD1E294DEA005363C5 /* Page1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4C6FFC1E294DEA005363C5 /* Page1ViewController.swift */; };
-		0F4C70001E295821005363C5 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4C6FFF1E295821005363C5 /* File.swift */; };
+		0F4C70001E295821005363C5 /* FlowerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4C6FFF1E295821005363C5 /* FlowerModel.swift */; };
 		A8229C661E29209D00BEBEF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8229C651E29209D00BEBEF3 /* AppDelegate.swift */; };
 		A8229C681E29209D00BEBEF3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8229C671E29209D00BEBEF3 /* ViewController.swift */; };
 		A8229C6B1E29209D00BEBEF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8229C691E29209D00BEBEF3 /* Main.storyboard */; };
@@ -22,7 +22,7 @@
 		0F4C6FF81E294D07005363C5 /* FlowersTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowersTableView.swift; sourceTree = "<group>"; };
 		0F4C6FF91E294D07005363C5 /* Page2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Page2ViewController.swift; sourceTree = "<group>"; };
 		0F4C6FFC1E294DEA005363C5 /* Page1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Page1ViewController.swift; sourceTree = "<group>"; };
-		0F4C6FFF1E295821005363C5 /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		0F4C6FFF1E295821005363C5 /* FlowerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowerModel.swift; sourceTree = "<group>"; };
 		A8229C621E29209D00BEBEF3 /* ProtocolOriented.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProtocolOriented.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8229C651E29209D00BEBEF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8229C671E29209D00BEBEF3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,7 +55,7 @@
 		0F4C6FFE1E295817005363C5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				0F4C6FFF1E295821005363C5 /* File.swift */,
+				0F4C6FFF1E295821005363C5 /* FlowerModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -182,7 +182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8229C681E29209D00BEBEF3 /* ViewController.swift in Sources */,
-				0F4C70001E295821005363C5 /* File.swift in Sources */,
+				0F4C70001E295821005363C5 /* FlowerModel.swift in Sources */,
 				A8229C661E29209D00BEBEF3 /* AppDelegate.swift in Sources */,
 				0F4C6FFA1E294D07005363C5 /* FlowersTableView.swift in Sources */,
 				0F4C6FFD1E294DEA005363C5 /* Page1ViewController.swift in Sources */,
