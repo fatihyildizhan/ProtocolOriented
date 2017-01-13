@@ -15,16 +15,19 @@ class Page2ViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    self.title = "Page 2"
     
+    // Flower Colors
     let colorList:[UIColor] = [UIColor.red, UIColor.blue, UIColor.yellow, UIColor.orange, UIColor.black]
     
+    // Fill the flower array
     for (index, color) in colorList.enumerated() {
       let flw = Flower("flower: \(index)", color: color)
       flowerList.append(flw)
     }
-    flowersTableView.reloadData()
     
-    self.title = "Page 2"
+    // reload the tableview
+    flowersTableView.reloadData()
   }  
 }
 
@@ -41,6 +44,12 @@ extension Page2ViewController: UITableViewDelegate, UITableViewDataSource {
     cell.backgroundColor = flower.color
     
     return cell
+  }
+  
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    let flower = flowerList[indexPath.row]
+    flower.water(flower) // water the flowers
+    flower.grow(flower) // grow flowers
   }
 }
 
