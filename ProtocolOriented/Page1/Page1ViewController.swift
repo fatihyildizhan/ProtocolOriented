@@ -15,7 +15,7 @@ class Page1ViewController: UIViewController {
     
   override func viewDidLoad() {
     super.viewDidLoad()
-    self.title = "Page 1"
+    self.title = "Page1"
     
     self.flowerDetailLabel.text = flower.name
     flower.water(flower: flower)
