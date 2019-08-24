@@ -2,4 +2,4 @@ language: swift
 osx_image: xcode11
 xcode_project: ProtocolOriented.xcodeproj
 xcode_scheme: ProtocolOriented
-xcode_destination: platform=iOS Simulator
+xcode_sdk: iphonesimulator13.0
