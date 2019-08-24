@@ -10,15 +10,16 @@ import UIKit
 
 class Page1ViewController: UIViewController {
   
-    var flower : Flower!
+    var flower : Flower?
     @IBOutlet weak var flowerDetailLabel: UILabel!
     
   override func viewDidLoad() {
     super.viewDidLoad()
     self.title = "Page1"
     
-    self.flowerDetailLabel.text = flower.name
-    flower.water(flower: flower)
+    if let flower = flower {
+        self.flowerDetailLabel.text = flower.name
+        flower.water(flower: flower)
+    }
   }
-  
 }

@@ -48,7 +48,3 @@ extension Page2ViewController : FlowersTableViewDelegate {
         self.actionDelegate?.page2ViewControllerSelect(flower: flower)
     }
 }
-
-
-
-
