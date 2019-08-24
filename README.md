@@ -1,2 +1,2 @@
 # ProtocolOriented
-protocol oriented functions
+Protocol oriented functions
